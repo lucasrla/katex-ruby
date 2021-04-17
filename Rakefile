@@ -20,7 +20,7 @@ task :update, :version do |_task, args| # rubocop:disable Metrics/BlockLength
   FileUtils.mkdir_p(dl_path)
   archive_path = File.join(dl_path, 'katex.tar.gz')
   unless File.exist?(archive_path)
-    url = 'https://github.com/Khan/KaTeX/releases/download/' \
+    url = 'https://github.com/KaTeX/KaTeX/releases/download/' \
           "#{version}/katex.tar.gz"
     IO.copy_stream(open(url), archive_path) # rubocop:disable Security/Open
   end

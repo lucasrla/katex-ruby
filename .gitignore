@@ -1,3 +1,4 @@
+# original ignores
 /.bundle/
 /.yardoc
 /Gemfile.lock
@@ -7,3 +8,14 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+# local
+vendor.noindex/
+bin/bundle
+bin/htmldiff
+bin/ldiff
+bin/rake
+bin/rspec
+bin/rubocop
+bin/ruby-parse
+bin/ruby-rewrite

@@ -94,6 +94,22 @@ and then run `bundle exec rake release`,
 which will create a git tag for the version, push git commits and tags,
 and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+### Updating KaTeX version
+
+Run the update task specifying the KaTeX version you want to update to (e.g. `0.13.2`):
+
+```sh
+cd katex-ruby
+bundle install
+
+# note the v before the version number and the slashes to escape the brackets
+# escape brackets to avoid zsh throwing `zsh: no matches found:` at you
+bundle exec rake update\[v0.13.2\]
+
+# run tests (as per instructions above)
+bundle exec rake spec
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at

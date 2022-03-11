@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 module Katex
-  VERSION = '0.6.2'
-  KATEX_VERSION = '0.13.2'
+  VERSION = '0.6.3'
+  KATEX_VERSION = 'v0.15.2'
 end
